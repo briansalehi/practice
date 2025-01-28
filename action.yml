@@ -1,0 +1,12 @@
+name: Practice Action
+description: Only for educational purposes
+inputs:
+  value:
+    description: Some random value
+    required: true
+    default: undefined
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.value }}
