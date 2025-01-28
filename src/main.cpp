@@ -1,8 +1,8 @@
 #include <practice/practice.hpp>
-#include <print>
+#include <iostream>
 
 int main()
 {
     pr::server server{};
-    std::println("{}:{}", server.address(), server.port());
+    std::cout << server.address() << ":" << server.port();
 }
