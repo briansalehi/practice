@@ -1,0 +1,9 @@
+*build*/
+.idea/
+_CPackConfig/
+*.zip
+*.rpm
+*.deb
+*.user
+*.tar
+CMakeUserPresets.json
