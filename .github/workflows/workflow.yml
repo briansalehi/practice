@@ -27,7 +27,7 @@ jobs:
           draft: false
           prerelease: false
         env:
-          GITHUB_TOKEN: ${{ secrets.github_token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload
         uses: actions/upload-release-asset@v1
         with:
@@ -36,4 +36,4 @@ jobs:
           asset_name: practice-0.1-linux.zip
           asset_content_type: application/zip
         env:
-          GITHUB_TOKEN: ${{ secrets.github_token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
